@@ -11,6 +11,15 @@ class QuestionsViewController: UIViewController {
     
     
     
+    @IBOutlet var questionImageView: UIImageView!
+    
+    @IBOutlet var questionLabel: UILabel!
+    @IBOutlet var button1: UIButton!
+    @IBOutlet var button2: UIButton!
+    @IBOutlet var button3: UIButton!
+    @IBOutlet var button4: UIButton!
+    
+    
     
     
     var questions: [Question] = [
@@ -19,6 +28,12 @@ class QuestionsViewController: UIViewController {
             Answer(text: "Goblin", type: .wrong),
             Answer(text: "Hobgoblin", type: .wrong),
             Answer(text: "Red Goblin", type: .wrong)
+        ]),
+        Question(text: "What is the name of this outfit?", answers: [
+            Answer(text: "Bunny Hood", type: .wrong),
+            Answer(text: "Bokoblin Hood", type: .wrong),
+            Answer(text: "Ravio's Hood", type: .correct),
+            Answer(text: "Tingles Hood", type: .wrong)
         ]),
         Question(text: "What is the name of this enemy?", answers: [
             Answer(text: "Jelly", type: .wrong),
@@ -38,21 +53,19 @@ class QuestionsViewController: UIViewController {
             Answer(text: "Snow", type: .wrong),
             Answer(text: "Crynosis", type: .wrong)
         ]),
-        Question(text: "What is the name of this outfit?", answers: [
-            Answer(text: "Bunny Hood", type: .wrong),
-            Answer(text: "Bokoblin Hood", type: .wrong),
-            Answer(text: "Ravio's Hood", type: .correct),
-            Answer(text: "Tingles Hood", type: .wrong)
-        ]),
         Question(text: "What is the name of this character?", answers: [
             Answer(text: "Hetsu", type: .correct),
             Answer(text: "Beedle", type: .wrong),
             Answer(text: "Petsu", type: .wrong),
             Answer(text: "Yunobo", type: .wrong)
         ]),
-        
     ]
 
+    func newQuestion() {
+        
+    }
+        
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 

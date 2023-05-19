@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7140D9102A17F1850060035A /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7140D90F2A17F1850060035A /* Game.swift */; };
 		714AF3A22A16783B00717FAD /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714AF3A12A16783B00717FAD /* QuestionsViewController.swift */; };
 		714AF3A42A16786500717FAD /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714AF3A32A16786500717FAD /* QuestionData.swift */; };
 		714AF3A62A167EDD00717FAD /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714AF3A52A167EDD00717FAD /* ResultsViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7140D90F2A17F1850060035A /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		714AF3A12A16783B00717FAD /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		714AF3A32A16786500717FAD /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 		714AF3A52A167EDD00717FAD /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				71AC9D882A16766B003BAD67 /* AppDelegate.swift */,
 				71AC9D8A2A16766B003BAD67 /* SceneDelegate.swift */,
 				71AC9D8C2A16766B003BAD67 /* ViewController.swift */,
+				7140D90F2A17F1850060035A /* Game.swift */,
 				714AF3A12A16783B00717FAD /* QuestionsViewController.swift */,
 				714AF3A52A167EDD00717FAD /* ResultsViewController.swift */,
 				714AF3A32A16786500717FAD /* QuestionData.swift */,
@@ -149,6 +152,7 @@
 			files = (
 				71AC9D8D2A16766B003BAD67 /* ViewController.swift in Sources */,
 				71AC9D892A16766B003BAD67 /* AppDelegate.swift in Sources */,
+				7140D9102A17F1850060035A /* Game.swift in Sources */,
 				714AF3A42A16786500717FAD /* QuestionData.swift in Sources */,
 				714AF3A22A16783B00717FAD /* QuestionsViewController.swift in Sources */,
 				71AC9D8B2A16766B003BAD67 /* SceneDelegate.swift in Sources */,
