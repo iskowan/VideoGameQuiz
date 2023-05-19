@@ -74,20 +74,13 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lv0-l5-FKo">
-                                <rect key="frame" x="42" y="101" width="309" height="306"/>
-                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2nc-ji-Oow"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="WGd-dk-7dA" firstAttribute="leading" secondItem="2nc-ji-Oow" secondAttribute="leading" constant="20" id="2vU-ey-RiW"/>
-                            <constraint firstItem="WGd-dk-7dA" firstAttribute="centerX" secondItem="lv0-l5-FKo" secondAttribute="centerX" id="6zt-1w-dWj"/>
-                            <constraint firstItem="WGd-dk-7dA" firstAttribute="top" secondItem="lv0-l5-FKo" secondAttribute="bottom" constant="62.666666666666686" id="CjL-ew-584"/>
-                            <constraint firstItem="lv0-l5-FKo" firstAttribute="top" secondItem="2nc-ji-Oow" secondAttribute="top" constant="42" id="Uns-jm-8uA"/>
                             <constraint firstItem="WGd-dk-7dA" firstAttribute="centerX" secondItem="O7N-og-zWT" secondAttribute="centerX" id="bUi-dY-UFE"/>
                             <constraint firstItem="2nc-ji-Oow" firstAttribute="trailing" secondItem="WGd-dk-7dA" secondAttribute="trailing" constant="20" id="haj-9x-sfJ"/>
-                            <constraint firstItem="lv0-l5-FKo" firstAttribute="leading" secondItem="2nc-ji-Oow" secondAttribute="leading" constant="42" id="jKi-1U-HtS"/>
                             <constraint firstItem="2nc-ji-Oow" firstAttribute="bottom" secondItem="WGd-dk-7dA" secondAttribute="bottom" constant="100" id="tcq-17-nAQ"/>
                         </constraints>
                     </view>

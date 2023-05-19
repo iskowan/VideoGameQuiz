@@ -7,15 +7,6 @@
 
 import Foundation
 
-struct Question {
-    var text: String
-    var answers: [Answer]
-}
-
-enum ResponseType {
-    case single, multiple, ranged
-}
-
 struct Answer {
     var text: String
     var type: answerCorrect
@@ -24,3 +15,9 @@ struct Answer {
 enum answerCorrect: String {
     case correct = "correct", wrong = "wrong"
 }
+
+struct Question {
+    var text: String
+    var answers: [Answer]
+}
+

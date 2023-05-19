@@ -9,6 +9,10 @@ import UIKit
 
 class QuestionsViewController: UIViewController {
     
+    
+    
+    
+    
     var questions: [Question] = [
         Question(text: "What is the name of this enemy?", answers: [
             Answer(text: "Bokoblin", type: .correct),
@@ -34,8 +38,19 @@ class QuestionsViewController: UIViewController {
             Answer(text: "Snow", type: .wrong),
             Answer(text: "Crynosis", type: .wrong)
         ]),
-        Question(text: "What is the name of this item?", answers: [
-            Answer(text: <#T##String#>, type: <#T##answerCorrect#>)])
+        Question(text: "What is the name of this outfit?", answers: [
+            Answer(text: "Bunny Hood", type: .wrong),
+            Answer(text: "Bokoblin Hood", type: .wrong),
+            Answer(text: "Ravio's Hood", type: .correct),
+            Answer(text: "Tingles Hood", type: .wrong)
+        ]),
+        Question(text: "What is the name of this character?", answers: [
+            Answer(text: "Hetsu", type: .correct),
+            Answer(text: "Beedle", type: .wrong),
+            Answer(text: "Petsu", type: .wrong),
+            Answer(text: "Yunobo", type: .wrong)
+        ]),
+        
     ]
 
     override func viewDidLoad() {
