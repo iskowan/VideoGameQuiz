@@ -9,6 +9,13 @@ import UIKit
 
 class ResultsViewController: UIViewController {
 
+    @IBOutlet var resultsLavel: UILabel!
+    @IBOutlet var correctionBar: UIProgressView!
+    @IBOutlet var descriptionLabel: UILabel!
+    
+    @IBOutlet var restartButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VideoGameQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0uj-aD-Gv2">
-                                <rect key="frame" x="45" y="387" width="302.33333333333331" height="78.333333333333314"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0uj-aD-Gv2">
+                                <rect key="frame" x="45.333333333333343" y="352.33333333333331" width="302.33333333333326" height="78.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breath Of the Wild Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NFH-5h-W8V">
                                         <rect key="frame" x="0.0" y="0.0" width="302.33333333333331" height="36"/>
@@ -26,16 +26,24 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tvz-Tt-w9a">
-                                        <rect key="frame" x="117.66666666666669" y="44" width="67.333333333333314" height="34.333333333333343"/>
+                                        <rect key="frame" x="117.66666666666666" y="44" width="67.333333333333343" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Begin"/>
+                                        <connections>
+                                            <segue destination="aVU-rF-993" kind="show" id="34s-ls-SQY"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0uj-aD-Gv2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7AR-4I-Byd"/>
+                            <constraint firstItem="0uj-aD-Gv2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="H9f-1M-mX4"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="tdE-vh-R2C"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -46,11 +54,11 @@
             <objects>
                 <viewController id="aVU-rF-993" customClass="QuestionsViewController" customModule="VideoGameQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O7N-og-zWT">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="37" translatesAutoresizingMaskIntoConstraints="NO" id="WGd-dk-7dA">
-                                <rect key="frame" x="20" y="412.33333333333326" width="353" height="305.66666666666674"/>
+                                <rect key="frame" x="20" y="377.33333333333326" width="353" height="305.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0t-vh-KcD">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
@@ -77,11 +85,14 @@
                                         <rect key="frame" x="0.0" y="271.33333333333331" width="353" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <segue destination="Opf-be-9Uz" kind="show" id="jr4-vI-VfT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lv0-l5-FKo">
-                                <rect key="frame" x="42" y="100.99999999999999" width="309" height="248.66666666666663"/>
+                                <rect key="frame" x="42" y="100.99999999999999" width="309" height="213.66666666666663"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2nc-ji-Oow"/>
@@ -97,6 +108,7 @@
                             <constraint firstItem="2nc-ji-Oow" firstAttribute="bottom" secondItem="WGd-dk-7dA" secondAttribute="bottom" constant="100" id="tcq-17-nAQ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="N2i-fC-XtU"/>
                     <connections>
                         <outlet property="button1" destination="7N2-Ue-Guk" id="4mQ-K5-tCS"/>
                         <outlet property="button2" destination="zP6-Sr-WgC" id="oE0-bP-XkM"/>
@@ -108,23 +120,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nzc-0e-e22" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="906" y="-27"/>
+            <point key="canvasLocation" x="897" y="-27"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="V3Z-zF-MNY">
             <objects>
-                <viewController id="Opf-be-9Uz" sceneMemberID="viewController">
+                <viewController id="Opf-be-9Uz" customClass="ResultsViewController" customModule="VideoGameQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="znt-nn-Lv1">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJU-Hr-VSd">
-                                <rect key="frame" x="159" y="490.66666666666669" width="75" height="34.333333333333314"/>
+                                <rect key="frame" x="159" y="455.66666666666669" width="75" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="0nU-VH-HtU"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Oc1-z8-xD3">
-                                <rect key="frame" x="121.66666666666669" y="266" width="150" height="165"/>
+                                <rect key="frame" x="121.66666666666669" y="231" width="150" height="165"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYH-Tc-iCS">
                                         <rect key="frame" x="40.666666666666664" y="0.0" width="68.666666666666686" height="34.666666666666664"/>
@@ -153,6 +168,13 @@
                             <constraint firstItem="IJU-Hr-VSd" firstAttribute="centerX" secondItem="Oc1-z8-xD3" secondAttribute="centerX" id="Zsf-2f-ko9"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xTX-wK-4Zz"/>
+                    <connections>
+                        <outlet property="correctionBar" destination="yth-kx-rW9" id="w2s-oc-z88"/>
+                        <outlet property="descriptionLabel" destination="Qyq-Gj-QkK" id="DqI-nH-hfo"/>
+                        <outlet property="restartButton" destination="IJU-Hr-VSd" id="kJC-ir-zQn"/>
+                        <outlet property="resultsLavel" destination="aYH-Tc-iCS" id="HOG-FF-OvB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3DJ-r4-Nlx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
