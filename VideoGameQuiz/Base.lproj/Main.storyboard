@@ -30,7 +30,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="gray" title="Begin"/>
                                         <connections>
-                                            <segue destination="aVU-rF-993" kind="show" id="34s-ls-SQY"/>
+                                            <segue destination="MqW-QI-Iyj" kind="showDetail" id="34s-ls-SQY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -66,33 +66,45 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7N2-Ue-Guk">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="7N2-Ue-Guk">
                                         <rect key="frame" x="0.0" y="57.333333333333371" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center"/>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="aVU-rF-993" eventType="touchUpInside" id="3Zf-ox-gaQ"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zP6-Sr-WgC">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zP6-Sr-WgC">
                                         <rect key="frame" x="0.0" y="128.66666666666669" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center"/>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="aVU-rF-993" eventType="touchUpInside" id="Lln-lM-OKK"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzA-3P-Hvv">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kzA-3P-Hvv">
                                         <rect key="frame" x="0.0" y="200.00000000000006" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center"/>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="aVU-rF-993" eventType="touchUpInside" id="jLZ-MH-c4V"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Kk-RQ-vm5">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1Kk-RQ-vm5">
                                         <rect key="frame" x="0.0" y="271.33333333333331" width="353" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button" titleAlignment="center"/>
                                         <connections>
-                                            <segue destination="Opf-be-9Uz" kind="show" id="jr4-vI-VfT"/>
+                                            <action selector="answerButtonPressed:" destination="aVU-rF-993" eventType="touchUpInside" id="6ym-g7-7Fn"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lv0-l5-FKo">
-                                <rect key="frame" x="42" y="100.99999999999999" width="309" height="213.66666666666663"/>
+                                <rect key="frame" x="42" y="97.999999999999986" width="309" height="216.66666666666663"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216.66666666666663" id="KJH-N6-l6U"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2nc-ji-Oow"/>
@@ -100,15 +112,14 @@
                         <constraints>
                             <constraint firstItem="WGd-dk-7dA" firstAttribute="leading" secondItem="2nc-ji-Oow" secondAttribute="leading" constant="20" id="2vU-ey-RiW"/>
                             <constraint firstItem="WGd-dk-7dA" firstAttribute="centerX" secondItem="lv0-l5-FKo" secondAttribute="centerX" id="6zt-1w-dWj"/>
-                            <constraint firstItem="WGd-dk-7dA" firstAttribute="top" secondItem="lv0-l5-FKo" secondAttribute="bottom" constant="62.666666666666686" id="CjL-ew-584"/>
                             <constraint firstItem="lv0-l5-FKo" firstAttribute="top" secondItem="2nc-ji-Oow" secondAttribute="top" constant="42" id="Uns-jm-8uA"/>
+                            <constraint firstItem="WGd-dk-7dA" firstAttribute="top" secondItem="lv0-l5-FKo" secondAttribute="bottom" constant="62.666666666666629" id="aDC-Jm-wm9"/>
                             <constraint firstItem="WGd-dk-7dA" firstAttribute="centerX" secondItem="O7N-og-zWT" secondAttribute="centerX" id="bUi-dY-UFE"/>
                             <constraint firstItem="2nc-ji-Oow" firstAttribute="trailing" secondItem="WGd-dk-7dA" secondAttribute="trailing" constant="20" id="haj-9x-sfJ"/>
                             <constraint firstItem="lv0-l5-FKo" firstAttribute="leading" secondItem="2nc-ji-Oow" secondAttribute="leading" constant="42" id="jKi-1U-HtS"/>
-                            <constraint firstItem="2nc-ji-Oow" firstAttribute="bottom" secondItem="WGd-dk-7dA" secondAttribute="bottom" constant="100" id="tcq-17-nAQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="N2i-fC-XtU"/>
+                    <navigationItem key="navigationItem" id="mz0-2N-fCa"/>
                     <connections>
                         <outlet property="button1" destination="7N2-Ue-Guk" id="4mQ-K5-tCS"/>
                         <outlet property="button2" destination="zP6-Sr-WgC" id="oE0-bP-XkM"/>
@@ -116,11 +127,12 @@
                         <outlet property="button4" destination="1Kk-RQ-vm5" id="Xr6-QH-CX4"/>
                         <outlet property="questionImageView" destination="lv0-l5-FKo" id="PHX-OJ-tn2"/>
                         <outlet property="questionLabel" destination="q0t-vh-KcD" id="BJL-Le-oER"/>
+                        <segue destination="Opf-be-9Uz" kind="showDetail" identifier="Results" id="PPp-tj-6br"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nzc-0e-e22" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="897" y="-27"/>
+            <point key="canvasLocation" x="1686" y="-27"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="V3Z-zF-MNY">
@@ -135,7 +147,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="0nU-VH-HtU"/>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="0nU-VH-HtU"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="Oc1-z8-xD3">
@@ -178,7 +190,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3DJ-r4-Nlx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1683" y="-27"/>
+            <point key="canvasLocation" x="2469" y="-27"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gbe-7H-2bd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MqW-QI-Iyj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="qZe-kx-GNn"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VrZ-ie-K7b">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aVU-rF-993" kind="relationship" relationship="rootViewController" id="gnq-Ko-tk3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S9L-kq-xI9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="896.94656488549617" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
