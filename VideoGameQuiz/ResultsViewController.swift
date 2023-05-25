@@ -17,23 +17,33 @@ class ResultsViewController: UIViewController {
     
     var responses: [Answer] = []
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        calculateQuizResult()
     }
     
-    
-    // Do any additional setup after loading the view.
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
-    
+    func calculateQuizResult(){
+        let frequencyOfAnswers = responses.reduce(into: [:]) { (counts, answer) in
+            counts[answer.type, default: 0] += 1
+        }
+        let frequentAnswersSorted = frequencyOfAnswers.sorted(by: { (pair1, pair2) in
+            return pair1.value > pair2.value
+        })
+        
+        
+        // Do any additional setup after loading the view.
+        
+        
+        /*
+         // MARK: - Navigation
+         
+         // In a storyboard-based application, you will often want to do a little preparation before navigation
+         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destination.
+         // Pass the selected object to the new view controller.
+         }
+         */
+        
+    }
 }

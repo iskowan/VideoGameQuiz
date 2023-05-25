@@ -127,7 +127,7 @@
                         <outlet property="button4" destination="1Kk-RQ-vm5" id="Xr6-QH-CX4"/>
                         <outlet property="questionImageView" destination="lv0-l5-FKo" id="PHX-OJ-tn2"/>
                         <outlet property="questionLabel" destination="q0t-vh-KcD" id="BJL-Le-oER"/>
-                        <segue destination="Opf-be-9Uz" kind="showDetail" identifier="Results" id="PPp-tj-6br"/>
+                        <segue destination="Opf-be-9Uz" kind="showDetail" identifier="Results" destinationCreationSelector="showResults:" id="PPp-tj-6br"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nzc-0e-e22" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
